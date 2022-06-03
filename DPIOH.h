@@ -1,0 +1,11 @@
+void PORT_vInit(unsigned char portname);
+void DIO_vSETPINDIR ( unsigned char portname,unsigned char pinumber,unsigned char direction);
+void DIO_vWRITEPIN(unsigned char portname,unsigned char pinumber,unsigned char Data);
+void DIO_vTOGGLEPIN(unsigned char portname,unsigned char pinumber);
+void DIO_vSETPORTDIR(unsigned char portname,unsigned char direction);
+void DIO_vWRITEPORT(unsigned char portname,unsigned data);
+unsigned char DIO_u8READPIN(unsigned char portname,unsigned char pinumber);
+unsigned char DIO_u8READPORT(unsigned char portname);
+void DIO_vEABLEPULLUP(unsigned char portname,unsigned char pinumber);
+void DIO_vWRITEHIGHPINS(unsigned char portname,unsigned data);
+void DIO_vWRITELOWPINS(unsigned char portname,unsigned data);
